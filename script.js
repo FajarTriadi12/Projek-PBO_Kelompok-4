@@ -5,7 +5,12 @@ const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
 const score = document.getElementById('score');
 const highScoreText = document.getElementById('highScore');
-
+const startButton = document.getElementById('start-button');
+const stopButton = document.getElementById('stop-button');
+const upButton = document.getElementById('up-button');
+const downButton = document.getElementById('down-button');
+const leftButton = document.getElementById('left-button');
+const rightButton = document.getElementById('right-button');
 
 // Define game variables
 const gridSize = 20;
@@ -146,6 +151,21 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener('keydown', handleKeyPress);
+startButton.addEventListener('click', startGame);
+stopButton.addEventListener('click', stopGame);
+
+upButton.addEventListener('click', () => {
+  direction = 'up';
+});
+downButton.addEventListener('click', () => {
+  direction = 'down';
+});
+leftButton.addEventListener('click', () => {
+  direction = 'left';
+});
+rightButton.addEventListener('click', () => {
+  direction = 'right';
+});
 
 function increaseSpeed() {
   //   console.log(gameSpeedDelay);
