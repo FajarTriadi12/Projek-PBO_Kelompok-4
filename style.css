@@ -89,4 +89,25 @@ body {
     position: absolute;
   }
 
+#controls {
+  position: absolute;
+  top: 75%;
+  text-align: center;
+}
+
+#controls button {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #abb78a;
+  cursor: pointer;
+}
+
+.direction-buttons {
+  margin-top: 10px;
+}
+
 
