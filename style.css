@@ -6,84 +6,84 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'VT323', monospace;
-    background-color: #D0E0E3;
-}
-
-.snake {
-    background-color: #D0E0E3;
-    border: #91AAB9 1px dotted;
-}
-
-#game-board {
+    background-color: #414141;
+  }
+  
+  .snake {
+    background-color: #414141;
+    border: #5a5a5a 1px dotted;
+  }
+  
+  #game-board {
     border-radius: 100px;
     display: grid;
     grid-template-columns: repeat(20, 20px);
     grid-template-rows: repeat(20, 20px);
     margin: 5px;
-}
-
-.game-border-1 {
-    border: #3C4F5A solid 10px;
+  }
+  
+  .game-border-1 {
+    border: #595f43 solid 10px;
     border-radius: 30px;
-    box-shadow: inset 0 0 0 10px #3C4F5A;
-}
-
-.game-border-2 {
-    border: #91AAB9 solid 8px;
+    box-shadow: inset 0 0 0 10px #595f43;
+  }
+  
+  .game-border-2 {
+    border: #abb78a solid 8px;
     border-radius: 26px;
-    box-shadow: inset 0 0 0 10px #91AAB9;
-}
-
-.game-border-3 {
-    border: #5E7C8A solid 30px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+  }
+  
+  .game-border-3 {
+    border: #8b966c solid 30px;
     border-radius: 20px;
-    box-shadow: inset 0 0 0 5px #5E7C8A;
-    background-color: #D0E0E3;
-}
-
-#instruction-text {
+    box-shadow: inset 0 0 0 5px #8b966c;
+    background-color: #c4cfa3;
+  }
+  
+  #instruction-text {
     position: absolute;
     top: 60%;
-    color: #1C2B34;
+    color: #333;
     width: 300px;
     text-align: center;
     text-transform: capitalize;
     padding: 30px;
     margin: 0;
-}
-
-.scores {
+  }
+  
+  .scores {
     display: flex;
     justify-content: space-between;
-}
-
-#score, #highScore {
+  }
+  
+  #score, #highScore {
     font-size: 40px;
     font-weight: bolder;
     margin: 10px 0;
-}
-
-#score {
-    color: #91AAB9;
-}
-
-#highScore {
-    color: #5E7C8A;
+  }
+  
+  #score {
+    color: #abb78a;
+  }
+  
+  #highScore {
+    color: #d8ddca;
     display: none;
-}
-
-.food {
-    background-color: #F5F9FA;
-    border: #3C4F5A 5px solid;
-}
-
-#logo {
+  }
+  
+  .food {
+    background-color: #dedede;
+    border: #999 5px solid;
+  }
+  
+  #logo {
     position: absolute;
-    background-color: #D0E0E3;
-}
-
-/* Controls Layout */
-#controls {
+    background-color: #c4cfa3;
+  }
+  
+  /* Controls Layout */
+  #controls {
     position: absolute;
     bottom: 300px;
     right: 1000px;
@@ -92,48 +92,49 @@ body {
     align-items: center;
     gap: 20px;
     z-index: 10;
-}
-
-#controls .action-buttons {
+  }
+  
+  #controls .action-buttons {
     display: flex;
     gap: 15px;
-}
-
-#controls button {
+  }
+  
+  #controls button {
     font-family: 'VT323', monospace;
     font-size: 24px;
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
-    background-color: #91AAB9;
+    background-color: #abb78a;
     cursor: pointer;
-}
-
-.direction-buttons {
+  }
+  
+  .direction-buttons {
     display: grid;
     grid-template-columns: 60px 60px 60px;
     grid-template-rows: 60px 60px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-}
-
-#up-button {
+  }
+  
+  #up-button {
     grid-column: 2;
     grid-row: 1;
-}
-
-#left-button {
+  }
+  
+  #left-button {
     grid-column: 1;
     grid-row: 2;
-}
-
-#down-button {
+  }
+  
+  #down-button {
     grid-column: 2;
     grid-row: 2;
-}
-
-#right-button {
+  }
+  
+  #right-button {
     grid-column: 3;
     grid-row: 2;
-}
+  }
+  
