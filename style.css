@@ -131,34 +131,33 @@ body {
   grid-column: 3;
 }
 
-#controls {
+#controls { 
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 40px; /* Geser ke kanan */
   text-align: center;
   z-index: 10;
 }
 
 #controls button {
   font-family: 'VT323', monospace;
-  font-size: 20px;
-  padding: 10px 15px;
-  margin: 10px;
+  font-size: 28px; /* Ukuran teks tombol diperbesar */
+  padding: 15px 20px; /* Tombol lebih besar */
+  margin: 8px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #abb78a;
   cursor: pointer;
 }
 
 .direction-buttons {
   display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 70px 70px 70px; /* Lebarkan kolom tombol arah */
+  grid-template-rows: 70px 70px;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  gap: 5px;
+  margin-top: 60px;
+  gap: 10px;
 }
 
 #up-button {
@@ -177,5 +176,3 @@ body {
   grid-column: 3;
   grid-row: 2;
 }
-
-
