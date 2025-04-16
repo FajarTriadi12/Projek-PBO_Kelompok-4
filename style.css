@@ -156,7 +156,7 @@ body {
   grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px;
   justify-content: center;
-  align-items: center;
+  align-items: 100;
   margin-top: 100px;
   gap: 5px;
 }
