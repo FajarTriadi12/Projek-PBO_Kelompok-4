@@ -155,16 +155,16 @@ startButton.addEventListener('click', startGame);
 stopButton.addEventListener('click', stopGame);
 
 upButton.addEventListener('click', () => {
-  direction = 'up';
+  if (direction !== 'down') direction = 'up';
 });
 downButton.addEventListener('click', () => {
-  direction = 'down';
+  if (direction !== 'up') direction = 'down';
 });
 leftButton.addEventListener('click', () => {
-  direction = 'left';
+  if (direction !== 'right') direction = 'left';
 });
 rightButton.addEventListener('click', () => {
-  direction = 'right';
+  if (direction !== 'left') direction = 'right';
 });
 
 function increaseSpeed() {
