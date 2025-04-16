@@ -5,7 +5,7 @@ const instructionText = document.getElementById('instruction-text');
 const logo = document.getElementById('logo');
 const score = document.getElementById('score');
 const highScoreText = document.getElementById('highScore');
-const startButton = document.getElementById('start-button');
+
 
 // Define game variables
 const gridSize = 20;
@@ -113,7 +113,6 @@ function startGame() {
   gameStarted = true; // Keep track of a running game
   instructionText.style.display = 'none';
   logo.style.display = 'none';
-  startButton.style.display = 'none';
   gameInterval = setInterval(() => {
     move();
     checkCollision();
@@ -147,7 +146,6 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener('keydown', handleKeyPress);
-startButton.addEventListener('click', startGame);
 
 function increaseSpeed() {
   //   console.log(gameSpeedDelay);
@@ -196,7 +194,6 @@ function stopGame() {
   gameStarted = false;
   instructionText.style.display = 'block';
   logo.style.display = 'block';
-  startButton.style.display = 'block';
 
 }
 
