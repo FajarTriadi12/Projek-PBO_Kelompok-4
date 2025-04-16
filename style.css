@@ -91,8 +91,11 @@ body {
 
 #controls {
   position: absolute;
-  top: 75%;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  z-index: 10;
 }
 
 #controls button {
@@ -107,7 +110,25 @@ body {
 }
 
 .direction-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
+}
+
+.direction-buttons > button:nth-child(1) {
+  grid-column: 2;
+}
+.direction-buttons > button:nth-child(2) {
+  grid-column: 1;
+}
+.direction-buttons > button:nth-child(3) {
+  grid-column: 2;
+}
+.direction-buttons > button:nth-child(4) {
+  grid-column: 3;
 }
 
 
